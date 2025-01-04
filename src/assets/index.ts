@@ -20,9 +20,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import typescript from "./tech/typescript.png";
-import rakuten from "./company/rakuten.png";
 import calsoft from "./company/calsoft.png";
-import kreativan from "./company/kreativan.png";
+import lmsSolutions from "./company/lmsSolutions.png";
+import mavenCluster from "./company/mavenCluster.png";
+import famacash from "./company/famacash.png";
 import project7 from "./projects/project7.png";
 import github from "./socials/github.svg";
 import linkedin from "./socials/linkedin.svg";
@@ -44,11 +45,12 @@ export {
   reactjs,
   redux,
   tailwind,
-  kreativan,
   typescript,
   threejs,
   calsoft,
-  rakuten,
+  lmsSolutions,
+  mavenCluster,
+  famacash,
   project7,
   github,
   linkedin,

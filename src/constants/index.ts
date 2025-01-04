@@ -19,9 +19,10 @@ import {
   project7,
   linkedin,
   github,
-  rakuten,
   calsoft,
-  kreativan,
+  lmsSolutions,
+  mavenCluster,
+  famacash,
 } from "../assets";
 
 // Navbar Links
@@ -46,19 +47,19 @@ export const NAV_LINKS = [
 // Services
 export const SERVICES = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Frontend Engineer",
+    icon: mobile,
   },
   {
     title: "UI/UX Designer",
     icon: creator,
   },
   {
-    title: "Frontend Engineer",
-    icon: mobile,
+    title: "Backend Engineer",
+    icon: web,
   },
   {
-    title: "Angular / React Developer",
+    title: "Angular / React + Node.js Developer",
     icon: backend,
   },
 ] as const;
@@ -114,42 +115,65 @@ export const TECHNOLOGIES = [
 // Experiences
 export const EXPERIENCES = [
   {
-    title: "Senior Frontend Engineer",
+    title: "Senior Development Engineer (Frontend Engineer)",
     company_name: "Calsoft",
     icon: calsoft,
     iconBg: "#383E56",
-    date: "Nov 2022 - Present",
+    date: "Dec 2022 – Present",
     points: [
-      "Created user registration flows, optimizing the onboarding experience and enhancing user retention .",
-      "Implemented critical security enhancements, including multi-factor authentication (MFA) and multi-person approval (MPA), significantly strengthening the application's defenses and reducing security vulnerabilities by 20%.",
-      "Configured automatic user sign-out after 30 minutes of inactivity, significantly boosting application security and mitigating potential risks, resulting in a 50% improvement in overall system security.",
-      "Improved the user onboarding process, resulting in increased user adoption and engagement by 30%.",
+      "Contributed as a Front-End Developer to a critical initiative at Asigra, developing four unique connectors for a backup and recovery utility on Linux and Windows platforms. Collaborated with four cross-functional teams, each responsible for a separate connector.",
+      "Designed and implemented responsive, intuitive user interfaces using Angular, TypeScript, HTML5, SASS, and Materialize, seamlessly integrating with Java-based server-side applications.",
+      "Enhanced functionality by employing advanced JavaScript techniques, leveraging Redux for state management, and mastering Jest for robust testing practices.",
+      "Supported team members by troubleshooting and resolving complex issues, maintaining project momentum, and fostering a collaborative team environment.",
+      "Acquired and integrated new technologies like NgRx for state management to adapt to the dynamic demands of the development process.",
     ],
   },
   {
-    title: "Software Developer",
-    company_name: "Rakuten",
-    icon: rakuten,
+    title: "Senior Software Engineer",
+    company_name: "LMS Solutions",
+    icon: lmsSolutions,
     iconBg: "#E6DEDD",
-    date: "Feb 2021 - Nov 2022",
+    date: "Oct 2021 – Nov 2022",
     points: [
-      "Innovatively streamlined the workflow for QA Teams by implementing CDK functionality with Angular, reducing the users' manual creation process from 3 steps to 1, resulting in a remarkable efficiency gain of 90%",
-      "Played a pivotal role in Integrating keycloak-12,16,18 using web languages, catering to the diverse needs of multiple clients and RCP",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Actively engaged with clients to define solution requirements, demonstrating a collaborative approach to project development and ensuring alignment with stakeholders' expectations.",
+      "Contributed as a Front-End Developer to the development of TripSplit, a dynamic platform for outdoor recreational activities like fishing and trekking, using Angular 13 in a Linux environment.",
+      "Engineered a responsive front-end architecture by integrating components in Angular 13, optimizing the user interface for enhanced performance and engagement.",
+      "Implemented the FullCalendar library for seamless trip scheduling and event display, enabling users to select and view trip events on an interactive calendar.",
+      "Developed robust forms for creating and editing trips, with comprehensive form validation to ensure data integrity and a user-friendly experience.",
+      "Configured route handling with guards to secure the application, enabling role-based navigation and enhancing overall safety and user experience.",
+      "Integrated Stripe for secure payment processes, ensuring smooth and reliable financial transactions.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Kreativan Technologies",
-    icon: kreativan,
+    title: "Mean Stack Developer",
+    company_name: "Maven Cluster",
+    icon: mavenCluster,
     iconBg: "#383E56",
-    date: "Jan 2020 - Jan 2021",
+    date: "May 2021 – Sep 2021",
     points: [
-      "Spearheaded the development of a seamless login and registration system for a web application, enhancing user authentication and accessibility.",
-      "Translated design concepts into tangible web assets through meticulous Design to HTML Conversion, ensuring visual consistency and user experience.",
-      "Took charge of implementing an intuitive shopping cart design page, contributing to a user-friendly e-commerce experience, and created multiple templates for diverse project requirements.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Served as a Full Stack Developer on Dr. Huellitas, an innovative digital platform enabling immediate veterinary consultations from home, addressing the need for accessible pet care in emergencies.",
+      "Developed a responsive and intuitive front-end using Angular 9, seamlessly integrated with Node.js for efficient server-side logic on a Linux platform.",
+      "Implemented a real-time booking system, allowing users to view available veterinary consultants and book emergency appointments via video conferences or face-to-face interactions.",
+      "Integrated WebSocket technology to enable live communication between pet owners and veterinarians, ensuring smooth and efficient consultation sessions.",
+      "Incorporated Stripe for secure payment processing, streamlining transactions within the platform.",
+      "Designed and optimized MongoDB schemas using Mongoose to manage pet and user data efficiently, ensuring a reliable and scalable database structure.",
+      "Conducted rigorous testing and debugging across the MEAN stack to ensure platform stability, enhancing performance and user satisfaction.",
+    ],
+  },
+  {
+    title: "Software Engineer (Frontend Developer)",
+    company_name: "Famacash India",
+    icon: famacash,
+    iconBg: "#E6DEDD",
+    date: "Sep 2018 – Aug 2020",
+    points: [
+      "Actively contributed as a Front-End Developer to the creation of a versatile payment solutions platform offering services such as local and international money transfers, airtime recharge, bill payments, and financial services like savings accounts and cash advances.",
+      "Developed a responsive and secure front-end environment using Angular 7, ensuring seamless user experiences across various financial services on the Linux platform.",
+      "Collaborated with clients to gather requirements, tailoring the platform to meet diverse business needs and securely handle complex financial transactions.",
+      "Implemented robust authorization and authentication mechanisms to manage access for seven distinct roles, ensuring appropriate permissions and data security.",
+      "Standardized common endpoint URLs for REST API interactions, optimizing backend communications and improving efficiency across roles and functions.",
+      "Participated in Agile methodologies, including daily scrum calls, sprint planning meetings, and retrospectives, to keep the project on track and aligned with client expectations.",
+      "Engaged in peer reviews and knowledge transfer sessions to uphold high-quality code standards and enhance team capabilities.",
+      "Ensured scalability and maintainability of the platform by employing modular design principles and integrating reusable components.",
     ],
   },
 ] as const;
@@ -159,24 +183,28 @@ export const PROJECTS = [
   {
     name: "Spotify Clone",
     description:
-      "Spotify is a digital music, podcast, and video service that gives you access to millions of songs and other content from creators all over the world. ",
+      "A Spotify clone built with the MERN stack and Tailwind CSS, featuring user authentication, Spotify Web API integration for music streaming, and a robust MongoDB database for managing playlists and user data.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "styled-component",
+        name: "nodejs",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "mongodb",
         color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "blue-text-gradient",
       },
     ],
     image: project7,
     source_code_link:
-      "https://github.com/khanfaizal813/spotify-clone-React/tree/main",
+      "https://github.com/khanfaizal813/Personal-3D-Portfolio",
     live_site_link: "https://clonedisneyplus.web.app/",
   },
 ] as const;
@@ -185,7 +213,7 @@ export const SOCIALS = [
   {
     name: "Linkedin",
     icon: linkedin,
-    link: "https://www.linkedin.com/in/faizal-khan-303502156/",
+    link: "https://www.linkedin.com/in/faizal-khan-303502156",
   },
   {
     name: "GitHub",
